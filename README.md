@@ -27,7 +27,7 @@ public struct Rectangle
     public bool Contains(float x, float y)
     {
         if (x < Left || x > Right) return false;
-        if (y < Top|| y > Bottom) return false;
+        if (y < Top || y > Bottom) return false;
         return true;
     }
 }
