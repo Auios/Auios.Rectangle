@@ -2,6 +2,26 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Company />
+    <Authors>Auios</Authors>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/Auios/Auios.Rectangle</PackageProjectUrl>
+    <PackageIcon>Logo.png</PackageIcon>
+    <Description>A pretty nifty Rectangle.</Description>
+    <PackageTags>Rectangle, Area, Box, Square, Contains, Boundary, Grid</PackageTags>
+    <RepositoryUrl>https://github.com/Auios/Auios.Rectangle</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Auios.Stopwatch\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\Media\Logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
