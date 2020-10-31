@@ -15,8 +15,8 @@ namespace Auios.Rectangle
         public readonly float Right => X + Width;
         public readonly float HalfWidth => Width * 0.5f;
         public readonly float HalfHeight => Height * 0.5f;
-        public readonly float MiddleX => X + HalfWidth;
-        public readonly float MiddleY => Y + HalfHeight;
+        public readonly float CenterX => X + HalfWidth;
+        public readonly float CenterY => Y + HalfHeight;
 
         public Rectangle(float x, float y, float width, float height)
         {
