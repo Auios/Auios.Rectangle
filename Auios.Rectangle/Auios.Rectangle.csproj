@@ -11,6 +11,7 @@
     <PackageTags>Rectangle, Area, Box, Square, Contains, Boundary, Grid</PackageTags>
     <RepositoryUrl>https://github.com/Auios/Auios.Rectangle</RepositoryUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

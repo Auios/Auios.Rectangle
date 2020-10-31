@@ -3,20 +3,20 @@
 
 namespace Auios.Rectangle
 {
-    public struct Rectangle
+    public class Rectangle
     {
-        public readonly float X;
-        public readonly float Y;
-        public readonly float Width;
-        public readonly float Height;
-        public readonly float Top => Y;
-        public readonly float Bottom => Y + Height;
-        public readonly float Left => X;
-        public readonly float Right => X + Width;
-        public readonly float HalfWidth => Width * 0.5f;
-        public readonly float HalfHeight => Height * 0.5f;
-        public readonly float CenterX => X + HalfWidth;
-        public readonly float CenterY => Y + HalfHeight;
+        public float X;
+        public float Y;
+        public float Width;
+        public float Height;
+        public float Top => Y;
+        public float Bottom => Y + Height;
+        public float Left => X;
+        public float Right => X + Width;
+        public float HalfWidth => Width * 0.5f;
+        public float HalfHeight => Height * 0.5f;
+        public float CenterX => X + HalfWidth;
+        public float CenterY => Y + HalfHeight;
 
         public Rectangle(float x, float y, float width, float height)
         {
