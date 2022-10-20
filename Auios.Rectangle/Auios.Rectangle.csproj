@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Company />
     <Authors>Auios</Authors>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
@@ -13,16 +13,5 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Version>1.0.1</Version>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="..\..\Auios.Stopwatch\LICENSE.md">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-    <None Include="..\Media\Logo.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
 
 </Project>

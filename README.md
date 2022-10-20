@@ -1,37 +1,33 @@
 # Auios.Rectangle
- 
-```cs
-namespace Auios.Rectangle
-{
-    public class Rectangle
-    {
-        public float X;
-        public float Y;
-        public float Width;
-        public float Height;
-        public float Top => Y;
-        public float Bottom => Y + Height;
-        public float Left => X;
-        public float Right => X + Width;
-        public float HalfWidth => Width * 0.5f;
-        public float HalfHeight => Height * 0.5f;
-        public float CenterX => X + HalfWidth;
-        public float CenterY => Y + HalfHeight;
 
-        public Rectangle(float x, float y, float width, float height)
-        {
-            X = x;
-            Y = y;
-            Width = width;
-            Height = height;
-        }
+## Fields:
+| Type | Name | Description |
+|-|-|-|
+| float | X | Left most value
+| float | Y | Top most value
+| float | Width | Width of the rectangle
+| float | Height | Height of the rectangle
 
-        public bool Contains(float x, float y)
-        {
-            if (x < Left || x > Right) return false;
-            if (y < Top || y > Bottom) return false;
-            return true;
-        }
-    }
-}
-```
+## Properties:
+| Type | Name | Description |
+|-|-|-|
+| float | Top |
+| float | Bottom |
+| float | Left |
+| float | Right |
+| float | HalfWidth |
+| float | HalfHeight |
+| float | CenterX |
+| float | CenterY |
+| Vector2 | Position |
+| Vector2 | Size |
+| Vector2 | Half |
+| Vector2 | Center |
+
+## Methods
+| Type | Name | Description |
+|-|-|-|
+| bool | Rectangle(X, Y, Width, Height) | Constructor
+| bool | Overlaps(X, Y) | Return true if X, Y is within the rectangle
+| bool | Overlaps(Rectangle) | Return true if another rectangle intersects this rectangle
+| bool | Overlaps(Circle) | (not implemented)
