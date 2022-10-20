@@ -1,17 +1,31 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Company />
     <Authors>Auios</Authors>
-    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/Auios/Auios.Rectangle</PackageProjectUrl>
     <PackageIcon>Logo.png</PackageIcon>
     <Description>A pretty nifty Rectangle.</Description>
     <PackageTags>Rectangle, Area, Box, Square, Contains, Boundary, Grid</PackageTags>
     <RepositoryUrl>https://github.com/Auios/Auios.Rectangle</RepositoryUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
+  <ItemGroup>
+      <None Include="..\LICENSE.md" Pack="true" PackagePath="" />
+      <None Include="..\Media\Logo.png">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+  </ItemGroup>
 </Project>
